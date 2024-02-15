@@ -5,12 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recipe Book</title>
 </head>
+<style>
+body {background-color:blanchedalmond}
+</style>
 <body>
-    <h1><a href = '/recipes/list'>Recipe Book</a></h1>
+    <h1 style = "color:blue"> <a href = '/recipes/list'> Recipe Book </a></h1>
     <h2>
         <ul>
             {% for recipe in recipes %}
-            <li><a href= "{{ recipe.link }}" >{{ recipe.name }}</a></li>
+            <li style = "color:red"><a href= "{{ recipe.link }}" >{{ recipe.name }}</a></li>
             {% endfor %}
         </ul>
     </h2>

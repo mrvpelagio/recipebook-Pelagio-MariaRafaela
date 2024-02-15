@@ -5,13 +5,16 @@
         <meta name ="viewport" content="width=device-width,initial-scale=1.0">
         <title> Recipe Book </title>
     </head>
+    <style>
+        body {background-color:blanchedalmond}
+        </style>
     <body>
-        <h1> <a href ='/recipes/list'> Recipes </a> </h1>
+        <h1 style = "color:blue"> <a href ='/recipes/list'> Recipes </a> </h1>
         <h2> {{ name }} </h2>
         <h3> 
             <ul> 
                 {% for ingredient in ingredients %}
-                <li> {{ ingredient.quantity }} {{ingredient.name}} </li>
+                <li style = "color:red"> {{ ingredient.quantity }} {{ingredient.name}} </li>
                 {% endfor %}
             </ul>
         </h3>
